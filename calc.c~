@@ -1,0 +1,72 @@
+#include <stdio.h>
+ 
+int a, b, c, d, e, f, g, h, i, j, k;
+
+
+
+int add();
+int multiply();
+int sub();
+int divide();
+
+int main()
+{
+	printf("For addition enter 1\nFor Subtraction enter 2\nFor Multiplication enter 3\nFor Division enter 4\n");
+		
+	scanf("%d", &k);
+	switch(k)
+	{
+	case 1 : printf("Addition\n"); 
+		 int addition = add();
+	break;
+
+	case 2 : printf("Subtraction\n"); 
+		 int subtraction = subtract();
+	break;
+
+	case 3 : printf("Multiply\n"); 
+		 int multiplication = multiply();
+	break;
+
+	case 4 : printf("Divide\n"); 
+		 int division = divide();
+	break;
+	}
+}
+
+int add()
+{
+	printf("Enter ten numbers\n");
+	scanf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d", &a, &b, &c, &d, &e, &f, &g, &h, &i, &j);
+	int sum = j+a;
+	printf("subtraction:%4d\n", sum);
+
+}
+
+int subtract()
+{
+	printf("Enter ten numbers\n");
+	scanf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d", &a, &b, &c, &d, &e, &f, &g, &h, &i, &j);
+	int sub = j-a;
+	printf("subtraction:%4d\n", sub);
+
+
+}
+
+int multiply()
+{
+	printf("Enter ten numbers\n");
+	scanf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d", &a, &b, &c, &d, &e, &f, &g, &h, &i, &j);
+	int mult = j*a;
+	printf("subtraction:%4d\n", mult);
+
+}
+
+int divide()
+{
+	printf("Enter ten numbers\n");
+	scanf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d", &a, &b, &c, &d, &e, &f, &g, &h, &i, &j);
+	int div = j/a;
+	printf("subtraction:%4d\n", div);
+
+}
